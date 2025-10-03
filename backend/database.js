@@ -1,13 +1,13 @@
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize(
-  process.env.CHOREO_XYZ_DATABASENAME,
-  process.env.CHOREO_XYZ_USERNAME,
-  process.env.CHOREO_XYZ_PASSWORD,
+  process.env.CHOREO_TEST_DATABASENAME,
+  process.env.CHOREO_TEST_USERNAME,
+  process.env.CHOREO_TEST_PASSWORD,
   {
-    host: process.env.CHOREO_XYZ_HOSTNAME,
+    host: process.env.CHOREO_TEST_HOSTNAME,
     dialect: 'mysql',
-    port: process.env.CHOREO_XYZ_PORT,
+    port: process.env.CHOREO_TEST_PORT,
     dialectOptions: {
       ssl: {
         rejectUnauthorized: false // This ensures the connection uses SSL without verifying the server's certificate
