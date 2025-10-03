@@ -3,7 +3,7 @@ const { Sequelize } = require('sequelize');
 const sequelize = new Sequelize(
   process.env.CHOREO_XYZ_DATABASENAME,
   process.env.CHOREO_XYZ_USERNAME,
-  process.env.CHOREO_XYZ_DATABASENAME,
+  process.env.CHOREO_XYZ_PASSWORD,
   {
     host: process.env.CHOREO_XYZ_HOSTNAME,
     dialect: 'mysql',
